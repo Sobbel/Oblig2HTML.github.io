@@ -1,0 +1,106 @@
+body {background-color:white;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;    
+    }
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 0.2rem;
+  }
+
+.grid-item {
+  text-align: left;
+  padding: 20px;
+}
+
+.kommentar {
+  font-family: cursive;
+}
+
+p {font-size: small;
+    }
+h1 {
+  font-size: xx-large;
+}
+
+h1, h2, h3, h4, h5 {
+  color: #00008B;
+}
+
+img {
+    border-radius:40px;
+    max-width: 50%;
+    height: auto;
+
+}
+
+a{
+    color: hotpink;
+}
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+      
+li {
+  float: left;
+}
+      
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+        background-color: #111;
+      }
+.active {
+        background-color: #04AA6D;
+        }
+
+* {
+  box-sizing: border-box;
+        }
+    .wrapper {
+        max-width: 940px;
+         margin: 0 auto;
+        }
+        
+    .wrapper > div {
+      border: 2px solid rgb(77, 182, 224);
+      border-radius: 5px;
+      background-color: rgba(128, 126, 244, 0.5);
+      padding: 1em;
+      color: #d73eb1;
+        } 
+        
+    .wrapper {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      grid-auto-rows: minmax(100px, auto);
+        }
+    .one {
+      grid-column: 1 / 2;
+      grid-row: 1;
+        }
+    .two {
+      grid-column: 2 / 4;
+      grid-row: 1 / 5;
+        }
+    .three {
+      grid-column: 1;
+      grid-row: 2 / 5;
+        }
+    .four {
+      grid-column: 1 / 4;
+      grid-row: 5 / 6;
+        }       
